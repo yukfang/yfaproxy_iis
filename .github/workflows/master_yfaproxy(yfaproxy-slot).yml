@@ -16,14 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Set up .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.301'
-
-    - name: Build with dotnet
-      run: dotnet build --configuration Release
-
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
@@ -33,4 +25,4 @@ jobs:
         app-name: 'yfaproxy'
         slot-name: 'yfaproxy-slot'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_e8ca9bef933d4037a0f84f9b1b2b1494 }}
-        package: ${{env.DOTNET_ROOT}}/myapp 
+        package: ${{env.DOTNET_ROOT}}/myapp
