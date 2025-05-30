@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <location path="classroom">
+    <system.webServer>
+      <directoryBrowse enabled="true" />
+    </system.webServer>  
+  </location>
+  
+  <location path="bf">
+    <system.webServer>
+      <directoryBrowse enabled="true" showFlags="Date,LongDate,Time,Extension,Size" />
+    </system.webServer>  
+  </location>
+  
+  <location path="halara">
+    <system.webServer>
+      <directoryBrowse enabled="true" showFlags="Date,LongDate,Time,Extension,Size" />
+    </system.webServer>  
+  </location>
+  <location path="eworld">
+    <system.webServer>
+      <directoryBrowse enabled="true" showFlags="Date,LongDate,Time,Extension,Size" />
+    </system.webServer>  
+  </location>
+  <location path="im30">
+    <system.webServer>
+      <directoryBrowse enabled="true" showFlags="Date,LongDate,Time,Extension,Size" />
+    </system.webServer>  
+  </location>
+  <location path="gamegou">
+    <system.webServer>
+      <directoryBrowse enabled="true" showFlags="Date,LongDate,Time,Extension,Size" />
+    </system.webServer>  
+  </location>
+  
+    <location path="buoy">
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+        </system.webServer>  
+    </location>
+    
+    <location path="sqlite3">
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+        </system.webServer>  
+    </location>
+  
+    <location path="shou">
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+        </system.webServer>  
+    </location>
+    
+    <location path="M1">
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+        </system.webServer>  
+    </location>
+    <location path="win">
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+        </system.webServer>  
+    </location>
+    <location path="android">
+        <system.webServer>
+            <directoryBrowse enabled="true" />
+        </system.webServer>  
+    </location>
+      
+    <system.webServer>
+      <staticContent>
+        <remove fileExtension=".webm"/>     
+        <remove fileExtension=".m4v"/>
+        <remove fileExtension=".ogv"/>
+        <remove fileExtension=".mp4"/>
+        <remove fileExtension=".dmg"/>
+        <remove fileExtension=".pkg"/>
+        
+        <mimeMap fileExtension=".mp4" mimeType="video/mp4"/>
+        <mimeMap fileExtension=".ogv" mimeType="video/ogg"/>
+        <mimeMap fileExtension=".m4v" mimeType="video/m4v"/>
+        <mimeMap fileExtension=".webm" mimeType="video/webm"/>
+        
+        
+        <mimeMap fileExtension=".pkg" mimeType="application/octet-stream"/>
+        <mimeMap fileExtension=".apk" mimeType="application/octet-stream"/>
+        <mimeMap fileExtension=".xapk" mimeType="application/octet-stream"/>
+        <mimeMap fileExtension=".dmg" mimeType="application/octet-stream"/>
+
+      </staticContent>
+    </system.webServer>
+</configuration>
